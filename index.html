@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>reflexUp – Assistance et confidentialité</title>
+<style>
+  :root {
+    --bg: #0d0f17;
+    --card: #171a24;
+    --text: #eef0f5;
+    --muted: #a3a8b8;
+    --green: #1fc75c;
+    --line: rgba(255,255,255,0.08);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 20px 64px; }
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 8px; }
+  .logo {
+    width: 64px; height: 64px; border-radius: 16px; flex: none;
+    background: linear-gradient(155deg, #1ac766, #053833);
+    display: grid; place-items: center;
+  }
+  h1 { font-size: 32px; line-height: 1.15; margin: 0; letter-spacing: -0.02em; }
+  .tagline { color: var(--muted); margin: 2px 0 0; }
+  nav { display: flex; gap: 10px; margin: 24px 0 8px; flex-wrap: wrap; }
+  nav a {
+    color: var(--text); text-decoration: none; font-weight: 600; font-size: 15px;
+    padding: 8px 14px; border-radius: 999px; background: var(--card); border: 1px solid var(--line);
+  }
+  nav a:hover { border-color: var(--green); }
+  section {
+    background: var(--card); border: 1px solid var(--line); border-radius: 20px;
+    padding: 24px; margin-top: 20px;
+  }
+  h2 { font-size: 22px; margin: 0 0 4px; }
+  h3 { font-size: 17px; margin: 22px 0 4px; }
+  p, li { color: #d6d9e2; }
+  .muted { color: var(--muted); font-size: 14px; }
+  a { color: var(--green); }
+  .contact {
+    margin-top: 12px; padding: 14px 16px; border-radius: 14px;
+    background: rgba(31,199,92,0.10); border: 1px solid rgba(31,199,92,0.25);
+  }
+  .contact strong { display: block; }
+  ul { padding-left: 20px; }
+  footer { margin-top: 28px; text-align: center; color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="logo" aria-hidden="true">
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="#fff"><path d="M13.5 2 4 13.5h6.2L9 22l10-12.2h-6.3L13.5 2z"/></svg>
+    </div>
+    <div>
+      <h1>reflexUp</h1>
+      <p class="tagline">Teste et entraîne tes réflexes en trois tests.</p>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#assistance">Assistance</a>
+    <a href="#confidentialite">Confidentialité</a>
+  </nav>
+
+  <section id="assistance">
+    <h2>Assistance</h2>
+    <p>reflexUp mesure ton temps de réaction avec trois tests : <strong>Réaction</strong> (touche dès que l'écran passe au vert), <strong>Cibles</strong> (touche 20 cibles qui apparaissent au hasard) et <strong>Go / No-Go</strong> (touche sur le vert, retiens-toi sur le rouge).</p>
+
+    <h3>Pourquoi mes temps varient d'une partie à l'autre ?</h3>
+    <p>C'est normal : la fatigue, la concentration, la main utilisée et la façon de tenir le téléphone jouent beaucoup. Pour comparer tes progrès, joue toujours dans les mêmes conditions.</p>
+
+    <h3>Qu'est-ce qu'un faux départ ?</h3>
+    <p>Toucher avant le signal, ou moins de 100 ms après, ne correspond pas à une vraie réaction : l'essai est compté comme faux départ et rejoué.</p>
+
+    <h3>Comment effacer mon historique ?</h3>
+    <p>Ouvre l'écran <em>Historique</em> (icône graphique en haut à droite), choisis le test, puis touche la corbeille. Supprimer l'app efface aussi tout l'historique.</p>
+
+    <h3>Une question, un problème ou une idée ?</h3>
+    <div class="contact">
+      <strong>Écris-moi :</strong>
+      <a href="mailto:matthieu.lebihan.dev@gmail.com?subject=reflexUp">matthieu.lebihan.dev@gmail.com</a>
+      <div class="muted">Réponse sous quelques jours.</div>
+    </div>
+  </section>
+
+  <section id="confidentialite">
+    <h2>Politique de confidentialité</h2>
+    <p class="muted">Dernière mise à jour : 6 novembre 2026</p>
+
+    <p><strong>reflexUp ne collecte aucune donnée personnelle.</strong></p>
+    <ul>
+      <li>Aucun compte n'est nécessaire et aucune information d'identification n'est demandée.</li>
+      <li>Les résultats de tes parties (temps, erreurs, date) sont enregistrés <strong>uniquement sur ton appareil</strong>. Ils ne sont jamais envoyés à un serveur, ni à l'éditeur, ni à des tiers.</li>
+      <li>L'app n'utilise ni publicité, ni outil de statistiques, ni traceur, ni service tiers, et ne se connecte pas à Internet.</li>
+      <li>Tu peux effacer ton historique à tout moment depuis l'app ; supprimer l'app supprime toutes ses données.</li>
+    </ul>
+
+    <h3>Enfants</h3>
+    <p>reflexUp ne collecte aucune donnée, y compris auprès des enfants.</p>
+
+    <h3>Modifications</h3>
+    <p>Si cette politique change, la nouvelle version sera publiée sur cette page avec sa date de mise à jour.</p>
+
+    <h3>Contact</h3>
+    <p>Éditeur : Matthieu Le Bihan — <a href="mailto:matthieu.lebihan.dev@gmail.com?subject=reflexUp%20-%20confidentialit%C3%A9">matthieu.lebihan.dev@gmail.com</a></p>
+  </section>
+
+  <footer>© 2026 Matthieu Le Bihan · reflexUp</footer>
+</main>
+</body>
+</html>
